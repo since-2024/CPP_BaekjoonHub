@@ -14,16 +14,16 @@ int main()
 
   cin >> n;
   cin >> dp[1][1];
-  
+
   for (int i = 2; i <= n; i++)
   {
-		for (int j = 1; j <= i; j++)
+    for (int j = 1; j <= i; j++)
     {
       cin >> k;
 
-			dp[i][j] = max(dp[i - 1][j - 1], dp[i - 1][j]) + k;
-		}
-	}
+      dp[i][j] = max(dp[i - 1][j - 1], dp[i - 1][j]) + k;
+    }
+  }
 
-	cout << *max_element(dp[n].begin(), dp[n].end());
+  cout << *max_element(dp[n].begin(), dp[n].end());
 }
