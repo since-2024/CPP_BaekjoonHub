@@ -5,7 +5,6 @@ using namespace std;
 
 int n, k;
 
-vector<vector<int>> v(MAX, vector<int>(MAX, 0));
 vector<vector<int>> dp(MAX, vector<int>(MAX, 0));
 
 int main()
@@ -20,9 +19,9 @@ int main()
   {
 		for (int j = 1; j <= i; j++)
     {
-      cin >> v[i][j];
+      cin >> k;
 
-			dp[i][j] = max(dp[i - 1][j - 1], dp[i - 1][j]) + v[i][j];
+			dp[i][j] = max(dp[i - 1][j - 1], dp[i - 1][j]) + k;
 		}
 	}
 
