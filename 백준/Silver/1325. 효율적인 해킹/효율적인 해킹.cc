@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define MAX 100001
+#define MAX 10001
 
 int n, m, x, y, maxCnt, cnt;
 vector<int> graph[MAX], ans;
