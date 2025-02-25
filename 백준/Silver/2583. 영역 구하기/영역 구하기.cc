@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define MAX 10000
+#define MAX 100
 
 int dx[4] = {1,-1,0,0};
 int dy[4] = {0,0,1,-1};
