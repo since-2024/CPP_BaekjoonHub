@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define MAX 10000
+#define MAX 1000
 
 int n, m, ans;
 vector<pair<int,int>> graph[MAX];
