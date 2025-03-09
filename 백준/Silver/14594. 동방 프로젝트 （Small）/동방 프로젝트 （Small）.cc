@@ -4,7 +4,7 @@ using namespace std;
 #define MAX 101
 
 int n, m, x, y, ans;
-bool g[MAX];
+int g[MAX];
 
 
 int main()
@@ -13,21 +13,20 @@ int main()
   cin.tie(0);
 
   cin >> n >> m;
-
+  
   for (int i=0; i <= n; i++)
-    g[i] = true;
+    g[i] = 1;
 
   while (m--)
   {
     cin >> x >> y;
 
     for (int i=x+1; i <= y; i++)
-      g[i] = false;
+      g[i] = 0;
   }
 
   for (int i=1; i <= n; i++)
-    if (g[i])
-      ans++;
+    ans += g[i];
 
   cout << ans;
 }
